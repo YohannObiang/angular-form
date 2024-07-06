@@ -1,0 +1,43 @@
+<div class="card flex justify-content-center container" class="marges">
+  
+  <p-card header="Apprenants inscrits" subheader="Liste des apprenants qui ont reussi leur inscription"  [style]="{ width: '100%', height:'400px' }">  
+    <p-scrollPanel [style]="{ width: '100%', height: '250px' }">
+      <table mat-table [dataSource]="this.apprenants" class="mat-elevation-z8">
+
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <!-- <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+      </ng-container> -->
+      <!-- nom Column -->
+
+      <ng-container matColumnDef="nom">
+        <th mat-header-cell *matHeaderCellDef> Nom </th>
+        <td mat-cell *matCellDef="let element"> {{element.nom}} </td>
+      </ng-container>
+      
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="prenom">
+        <th mat-header-cell *matHeaderCellDef> Prénom </th>
+        <td mat-cell *matCellDef="let element"> {{element.prenom}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="formation">
+        <th mat-header-cell *matHeaderCellDef> Formation </th>
+        <td mat-cell *matCellDef="let element"> {{element.formation}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+    </table>
+    </p-scrollPanel>
+
+  </p-card>
+</div>
+

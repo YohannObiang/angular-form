@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    padding: 30px 50px;
+    height: 400px;
+}
+@media (max-width: 600px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        height: 400px;
+    }
+}

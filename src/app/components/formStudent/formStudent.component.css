@@ -1,0 +1,23 @@
+.input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+button{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    /* margin: 75px auto; */
+    width: fit-content;
+}
+.marges{
+    margin: 10px;
+}
+@media (max-width: 600px){
+    
+    .marges{
+        margin: 10px 0;
+    }
+}

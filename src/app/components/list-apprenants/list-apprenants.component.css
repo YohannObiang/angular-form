@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+  }
+  .marges{
+    margin: 10px;
+}
+@media (max-width: 600px){
+    
+    .marges{
+        margin: 10px 0;
+    }
+}
