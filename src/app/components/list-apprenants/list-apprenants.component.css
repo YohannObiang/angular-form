@@ -4,7 +4,7 @@ table {
   .marges{
     margin: 10px;
 }
-@media (max-width: 600px){
+@media (max-width: 720px){
     
     .marges{
         margin: 10px 0;

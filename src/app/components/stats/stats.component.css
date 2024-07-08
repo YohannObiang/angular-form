@@ -1,0 +1,30 @@
+.boxdiv{
+    margin: 10px;
+}
+
+@media (max-width: 1274px){
+    .box{
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .boxdiv{
+        width: 33%;
+    }
+    .icon{
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+@media (max-width: 720px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .boxdiv{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
