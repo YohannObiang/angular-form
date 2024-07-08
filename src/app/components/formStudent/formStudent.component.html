@@ -1,8 +1,8 @@
 <div class="card flex justify-content-center container" style="height: 100%" class="marges">
   <p-card header="Formulaire d'inscription" subheader="Entrez vos informations"  [style]="{ width: '100%', height:'400px' }">
 <form #formulaire="ngForm" (ngSubmit)="onSubmit(formulaire)" >
-  <div class="card flex justify-content-center">
-    <div class="flex flex-column gap-2">
+  <div class="card flex ">
+    <div class="flex flex-column gap-2"  style="width: 100%;">
         <input 
             pInputText
             id="username" 
@@ -12,11 +12,12 @@
             placeholder="Nom"
             class="input"
             #nom="ngModel"
+             style="width: 100%;"
             />
     </div>
   </div>
-  <div class="card flex justify-content-center">
-    <div class="flex flex-column gap-2">
+  <div class="card flex">
+    <div class="flex flex-column gap-2" style="width: 100%;">
         <input 
             pInputText
             id="username" 
@@ -27,8 +28,8 @@
             #prenom="ngModel" />
     </div>
   </div>
-  <div class="card flex justify-content-center" >
-    <div class="flex flex-column gap-2">
+  <div class="card flex"  >
+    <div class="flex flex-column gap-2" style="width: 100%;">
 
             <select name=""
             pInputText id=""
@@ -43,7 +44,7 @@
             </select>
     </div>
   </div>
-  <div class="card flex justify-content-center">
+  <div class="card flex">
     <button pButton class="input">Valider</button>
 </div>
 </form>

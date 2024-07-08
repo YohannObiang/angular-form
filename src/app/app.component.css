@@ -1,13 +1,23 @@
 .main{
     display: flex;
     padding: 30px 50px;
-    height: 400px;
+    height: fit-content;
+    width: 100%;
+}
+.main .app-formStudent{
+    width: 40%;
+}
+.main .app-list-apprenants{
+    width: 40%;
+}
+.main .app-stats{
+    width: 20%;
 }
 @media (max-width: 600px){
     .main{
         display: flex;
         flex-direction: column;
         padding: 30px 20px;
-        height: 400px;
+        height: fit-content;
     }
 }
